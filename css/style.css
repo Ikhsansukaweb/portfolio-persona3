@@ -971,10 +971,13 @@ body.project-screen-active .side-number {
 }
 
 /* Profile Sub-header above PROJECT (Matching Atlus P3R Screenshot) */
+/* Nama pemilik: baris sendiri di atas banner judul, selalu di lapisan teratas */
 .slink-profile-header {
   margin-left: 5.0vw;
-  margin-top: 2.8vh;
-  margin-bottom: 3.2vh; /* Generous breathing room between name and PROJECT */
+  margin-top: 2vh;
+  margin-bottom: 1.4vh;
+  position: relative;
+  z-index: 40; /* di atas banner judul */
   user-select: none;
   pointer-events: none;
 }
@@ -992,6 +995,21 @@ body.project-screen-active .side-number {
 #skill-page .slink-profile-name {
   color: #2a313d; /* Hitam muda / soft dark charcoal per user request */
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.35);
+}
+
+/* ==========================================================================
+   NAMA PEMILIK: dipindah ke KANAN-ATAS. Elemen lain tetap di kiri (asli).
+   ========================================================================== */
+#project-page .slink-profile-header,
+#skill-page .slink-profile-header,
+#about-page .slink-profile-header {
+  position: fixed;
+  right: 4vw;
+  top: 0;
+  left: auto;
+  margin: 2.4vh 0 0 0;
+  z-index: 45;
+  text-align: right;
 }
 
 /* ==========================================================================
@@ -1947,6 +1965,11 @@ body.about-screen-active .character-viewport {
 
 .p3r-mail-gmail {
   background: #ea4335;
+  color: #ffffff;
+}
+
+.p3r-mail-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: #ffffff;
 }
 
