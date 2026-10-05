@@ -136,7 +136,7 @@ const slinkData = [
     numeral: "II",
     title: "ISAN STREAMING BACKEND",
     subtitle: "Anime · Film · Series · Musik API",
-    url: "isanim.web.id"
+    url: "https://github.com/Ikhsansukaweb/isan"
   },
   {
     numeral: "III",
@@ -154,7 +154,7 @@ const slinkData = [
     numeral: "V",
     title: "ISANC BOT PANEL",
     subtitle: "Panel Kontrol Bot AFK",
-    url: "isanc.biz.id"
+    url: "https://github.com/Ikhsansukaweb/isanc"
   }
 ];
 
